@@ -1,0 +1,27 @@
+﻿.custom-widget {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.headerSliderContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(50%);
+  }
+
+  0% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,31 @@
+﻿@model Nop.Plugin.Widgets.HeaderSliderPlugin.Models.PublicInfoModel
+
+@{
+    var title = ViewData["title"]?.ToString() ?? "";
+    var startdateStr = ViewData["startdate"]?.ToString() ?? "";
+    var enddateStr = ViewData["enddate"]?.ToString() ?? "";
+    var isDisabled = ViewData["isdisabled"]?.ToString() ?? "";
+    var fontcolor = ViewData["fontcolor"]?.ToString() ?? "";
+    var backgroundcolor = ViewData["backgroundcolor"]?.ToString() ?? "";
+    var fontfamily = ViewData["fontfamily"]?.ToString() ?? "";
+
+
+
+    DateTime startdate;
+    DateTime enddate;
+
+    if (DateTime.TryParse(startdateStr, out startdate) && DateTime.TryParse(enddateStr, out enddate))
+    {
+        bool isWithinDateRange = DateTime.Now >= startdate && DateTime.Now <= enddate;
+        if (isDisabled == "True" && isWithinDateRange)
+        {
+            <div id="header-slider" class="headerSliderContent" style="background-color: @backgroundcolor; height: @(Model.WidgetHeight)px;  ">
+                <h1 class="custom-widget" style="color: @fontcolor; font-size: @(Model.FontSize)px; font-family: @fontfamily; animation: slide linear infinite; animation-duration:  @(Model.AnimationTime)s;">
+                    @title
+                </h1>
+            </div>
+
+        }
+    }
+}
+

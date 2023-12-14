@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Nop.Plugin.Widgets.HeaderSliderPlugin</id>
+    <version>1.0.0</version>
+    <authors>Nop.Plugin.Widgets.HeaderSliderPlugin</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0">
+        <dependency id="Nop.Web.Framework" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net7.0/Views/Configure.cshtml" buildAction="Content" />
+      <files include="any/net7.0/Views/PublicInfo.cshtml" buildAction="Content" />
+      <files include="any/net7.0/Views/_PublicInfo.SliderLine.cshtml" buildAction="Content" />
+      <files include="any/net7.0/Views/_ViewImports.cshtml" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Presentation\Nop.Web\Plugins\Widgets.HeaderSliderPlugin\Nop.Plugin.Widgets.HeaderSliderPlugin.dll" target="lib\net7.0\Nop.Plugin.Widgets.HeaderSliderPlugin.dll" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\Configure.cshtml" target="content\Views\Configure.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\Configure.cshtml" target="contentFiles\any\net7.0\Views\Configure.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\PublicInfo.cshtml" target="content\Views\PublicInfo.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\PublicInfo.cshtml" target="contentFiles\any\net7.0\Views\PublicInfo.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\_PublicInfo.SliderLine.cshtml" target="content\Views\_PublicInfo.SliderLine.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\_PublicInfo.SliderLine.cshtml" target="contentFiles\any\net7.0\Views\_PublicInfo.SliderLine.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\_ViewImports.cshtml" target="content\Views\_ViewImports.cshtml" />
+    <file src="C:\Users\irem.dagdeviren\Desktop\nopCommerce_4.60.5_Source\src\Plugins\Nop.Plugin.HeaderSliderPlugin\Views\_ViewImports.cshtml" target="contentFiles\any\net7.0\Views\_ViewImports.cshtml" />
+  </files>
+</package>

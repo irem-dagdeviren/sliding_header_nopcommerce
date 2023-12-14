@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Header Sliding Banner",
+  "FriendlyName": "Header Slider Plugin",
+  "SystemName": "Widgets.HeaderSliderPlugin",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.60" ],
+  "Author": "dagdeviren",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.HeaderSliderPlugin.dll",
+  "Description": "this plugins supports sliding text on top of the page"
+}

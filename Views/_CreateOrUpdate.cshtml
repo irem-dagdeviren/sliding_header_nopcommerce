@@ -1,0 +1,127 @@
+﻿@model Nop.Plugin.Widgets.HeaderSliderPlugin.Models.ConfigurationModel
+
+<div asp-validation-summary="All"></div>
+<input asp-for="Id" type="hidden" />
+
+@if (ViewBag.RefreshPage == true)
+{
+    <script>
+        try { window.opener.document.forms['@(Context.Request.Query["formId"])'].@(Context.Request.Query["btnId"]).click(); }
+        catch (e) { }
+        window.close();
+    </script>
+}
+
+<div class="cards-group">
+    <div class="card card-default card-popup">
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="Title" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="Title" />
+                <span asp-validation-for="Title"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="Zone" />
+            </div>
+            <div class="col-md-9">
+                <nop-select asp-for="Zone" asp-items="@Model.Zones" />
+                <span asp-validation-for="Zone"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="StartDate" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="StartDate" />
+                <span asp-validation-for="StartDate"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="EndDate" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="EndDate" />
+                <span asp-validation-for="EndDate"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="IsDisabled" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="IsDisabled" />
+                <span asp-validation-for="IsDisabled"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card card-default">
+    <div class="card-body">
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="FontFamily" />
+            </div>
+            <div class="col-md-9">
+                <nop-select asp-for="FontFamily" asp-items="@Model.Fonts" />
+                <span asp-validation-for="FontFamily"></span>
+
+            </div>
+        </div>
+        <nop-label>Enter font size in px metric</nop-label>
+        <div class="form-group row">
+
+            <div class="col-md-3">
+                <nop-label asp-for="FontSize" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="FontSize" />
+                <span asp-validation-for="FontSize"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="FontColor" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="FontColor" />
+                <span asp-validation-for="FontColor"></span>
+            </div>
+        </div>
+        <nop-label>Enter heigh of widget in px metric</nop-label>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="WidgetHeight" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="WidgetHeight" />
+                <span asp-validation-for="WidgetHeight"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="BackgroundColor" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="BackgroundColor" />
+                <span asp-validation-for="BackgroundColor"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <nop-label asp-for="AnimationTime" />
+            </div>
+            <div class="col-md-9">
+                <nop-editor asp-for="AnimationTime" />
+                <span asp-validation-for="AnimationTime"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
